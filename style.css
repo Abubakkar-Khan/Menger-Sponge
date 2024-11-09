@@ -1,0 +1,35 @@
+body, html {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Vertical alignment */
+    align-items: center;
+    justify-content: center;
+    /* height: 80vh; */
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    /* background-color: rgb(17, 16, 16); */
+    background-color: rgb(22, 22, 22);
+  }
+  
+  h1 {
+    font-weight: bolder;
+    user-select: none;
+    color: #ffffff;
+    /* font-size: 24px; */
+  }
+  
+  
+  canvas {
+    display: block;
+  }
+
+
+.nav-item {
+    user-select: none;
+    color: white;
+    text-emphasis-color: white;
+}
+
+
+  
