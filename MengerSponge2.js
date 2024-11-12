@@ -52,19 +52,23 @@ let x = 0;  // Initialize the click count variable
 let a = 0;
 
 function setup() {
-    createCanvas(800, 400, WEBGL);
     
-    let b = new Box(0, 0, 250, 200);
+    let canvas = createCanvas(500, 500, WEBGL); // Set the size of the canvas as needed
+    canvas.parent('canvas-container'); // Specify the container's ID
+
+    
+    let b = new Box(0, 0, 0, 200);
     sponge.push(b);
     orignal.push(b);  // Save the original state
 
 }
 
 function mousePressed() {
-    if (x >= 2) {
+    if (x >= 3) {
         sponge = orignal;  // Reset the sponge array to the original state
         x = 0;  // Reset click count to 0
-    } else {
+    } else 
+    {
         let next = [];
         for (let b of sponge) {
             next = next.concat(b.generate()); // Generate the next level of boxes
@@ -80,9 +84,10 @@ function draw() {
 
     noStroke();
 
-    rotateX(a);
-    rotateY(a * 0.5);
-    rotateZ(a * 0.3);
+    rotateX(-.3);
+    rotateY(-0.2);
+    // rotateZ();
+    //rotateZ(a * 0.3);
 
     lights();
 
@@ -92,5 +97,5 @@ function draw() {
 
     
 
-    a += 0.01;
+    //a += 0.01;
 }

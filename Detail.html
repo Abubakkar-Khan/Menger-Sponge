@@ -3,12 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Details - Menger Sponge</title>
+    <!-- p5.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <!-- Custom JS -->
+    <script src="MengerSponge2.js"></script> <!-- First p5.js sketch -->
+    <!-- Link to Bootstrap 5 CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css">
 
-    <!-- Navbar -->
+    <title>MENGER SPONGE</title>
+</head>
+<body class="col-12">
+    
+    
     <header class="col-12">
 
         <!-- Navbar with black background and white text -->
@@ -38,18 +45,23 @@
             </div>
         </div>
     </nav>
+    
+</header>
 
+
+<h1 class="text-center m-4">What is the Menger Sponge?</h1>
+
+<!-- Details Content -->
+<div class="container mt-4 d-flex ">
+        <div id="canvas-container"></div> <!-- Canvas will appear here -->
+        <p>A Menger sponge is a 3D fractal shape that starts with a simple cube. This cube is divided into 27 smaller cubes (like a Rubik's cube), and the process of removing cubes begins. The center cube of each face and the middle cube of the entire structure are removed, leaving 20 smaller cubes in the next iteration.
+            <br><br>This process is repeated recursively, where each smaller cube undergoes the same division and removal of cubes. As each iteration progresses, the sponge becomes more intricate and detailed, with smaller cubes removed in each step, creating a highly porous structure.
+            <br><br>Despite its increasing surface complexity, the volume of the Menger sponge approaches zero as the iterations go on. This paradoxical property makes it an interesting object in mathematics, used to demonstrate concepts like fractals, infinite surfaces, and self-similarity in geometry.
+        </p>
+    
         
-        <h1 class="text-center m-2">MENGER SPONGE DETAIL</h1>
-    </header>
-
-    <!-- Details Content -->
-    <div class="container mt-4">
-        <h1 class="text-center">What is the Menger Sponge?</h1>
-        <p>The Menger Sponge is a 3D fractal that is built by recursively subdividing a cube. It is an example of a geometric object that has a non-integer dimension, a characteristic of fractals. The Menger Sponge is often used to demonstrate concepts in mathematical fractals, self-similarity, and dimension theory.</p>
-        <p>The construction process starts with a solid cube. Then, at each step, you remove smaller cubes from the structure, leaving behind a hollow, sponge-like shape. The more iterations you do, the more complex the structure becomes.</p>
-        <p>This fractal is a part of the family of <b>Menger Curves</b>, and its dimension lies between 2 and 3, making it a fascinating example of objects that do not fit neatly into the traditional definitions of dimensions.</p>
     </div>
 
 </body>
 </html>
+
