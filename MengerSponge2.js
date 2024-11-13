@@ -79,7 +79,10 @@ function mousePressed() {
     }
 }
 
+
 function draw() {
+
+    
     background(22);
 
     noStroke();
