@@ -5,6 +5,7 @@ Welcome to the **Menger Sponge** project! This website provides an interactive 3
 ## About the Menger Sponge
 
 The **Menger Sponge** is a 3D fractal that starts with a cube divided into 27 smaller cubes. In each iteration, certain cubes are removed, creating an increasingly intricate and porous structure. Despite the growing complexity, its volume approaches zero while the surface area becomes infinite, making it a paradoxical and captivating mathematical object.
+( For performance reasons, the visualization is restricted to two iterations, as further iterations may cause the application to freeze. )
 
 ### Key Features:
 - **Interactive 3D View**: Explore the Menger Sponge’s recursive structure.
